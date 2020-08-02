@@ -55179,6 +55179,7 @@ var MainView = /*#__PURE__*/function (_React$Component) {
       localStorage.setItem("token", authData.token);
       localStorage.setItem("user", authData.user.Username);
       this.getMovies(authData.token);
+      window.location.reload();
     }
   }, {
     key: "onLoggedOut",
@@ -55603,7 +55604,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64113" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65471" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
